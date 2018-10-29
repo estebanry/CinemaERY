@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cinema_ERY.Views.RCompraPage" Title="Resumen De Compra">
+    
+    
+
+        <ListView x:Name="Rcompra">
+            <ListView.ItemTemplate  >
+                
+                <DataTemplate >
+                    
+                    <ViewCell  >
+                        
+                        <StackLayout>
+                            
+
+                            <Label Text="Peliculas" />
+                            <Label Text="Nombre: " />
+                            <Label Text="Fecha: " />
+                            <Label Text="Cantidad De Boletas: " />
+                            <Label Text="{Binding Nombre}" />
+                            <Label Text="{Binding FechaEstreno}" />
+
+                            <Label Text="{Binding Cinema}"/>
+                            <Label Text="{Binding Sala}"/>
+                            <Label Text="{Binding Ciudad}"/>
+                            <Label Text="{Binding Precio}"/>
+                                
+                        </StackLayout>
+                        
+                    </ViewCell>
+                    
+                </DataTemplate>
+                
+            </ListView.ItemTemplate>
+            
+        </ListView>
+
+   
+</ContentPage>
