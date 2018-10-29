@@ -25,7 +25,7 @@ namespace Cinema_ERY.Views
                  HttpClient cliente = new HttpClient();
                 cliente.BaseAddress = new Uri("https://misapis.azurewebsites.net");
 
-                var content = new StringContent("User:" + usuario.Text + "Password:" + contrasena.Text, Encoding.UTF8, "application/json");
+                var content = new StringContent("User:" + usuario.Text + "Password:" + contrasenaa.Text, Encoding.UTF8, "application/json");
 
                 var response = cliente.PostAsync("/api/Seguridad", content).Result;
                 if (response.IsSuccessStatusCode)
